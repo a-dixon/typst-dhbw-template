@@ -15,3 +15,4 @@ If you intend to use the VS Code extension "Typst-LSP", don't,
 and use the Tinymist Typst extension instead.
 
 This is a adapted version of a template by [@satoqz](https://github.com/satoqz/).
+It is designed for Computer Science at the DHBW Stuttgart, and may be compatible with other courses of study.

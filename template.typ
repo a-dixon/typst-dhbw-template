@@ -67,7 +67,7 @@
 		Ich bin mir bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.
 
 		#title
-		*a big & fat _TODO_!*
+		// *a big & fat _TODO_!*
 	],
 	abstract: "Abstract",
 	contents: "Inhaltsverzeichnis",
@@ -199,7 +199,7 @@
 	)
 
 	// do not justify inside of figures, incl. tables
-	#show figure: set par (justify: false)
+	#show figure: set par(justify: false)
 
 	#set figure(
 		numbering: "I"
@@ -387,7 +387,10 @@
 			if n > 2 { n = 2 }
 			return n * 2em
 		},
-		fill: repeat(" . ")
+		// fill: repeat(" . ") // Deprecated in Typst 0.13
+	)
+	#set outline.entry(
+		fill: repeat([.], gap: 0.15em)
 	)
 	#show outline.entry.where(level: 1): it => {
 		if it.element.func() != heading { return it }
